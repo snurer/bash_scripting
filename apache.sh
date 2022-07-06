@@ -1,8 +1,12 @@
 #!/bin/bash
 
-##install apache##
+echo "##installing apache##"
 
-yum install httpd -y
-systemctl start httpd
+	sudo yum install httpd -y
+	sudo systemctl enable httpd
+	sudo systemctl start httpd
+
+echo "##apache is running##"
+
 
 
